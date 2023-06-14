@@ -15,13 +15,16 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 5.5rem;
     color: #01274a;
-    
+    font-weight: 600;
 }
 
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.45rem; 
+    font-size: 2.5rem; 
     color: #01274a;
+    font-weight: 650;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 
@@ -53,7 +56,7 @@ header{
 }
 
 .nav-link:hover{
-    color: rgb(209, 233, 245);
+    color: rgb(222, 239, 248);
     
 }
 
@@ -91,109 +94,24 @@ header{
 
 
 
-/* Países (destinos) */
-.paises{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 35px;
-    flex-wrap: wrap;
+
+
+.card{
+    margin: 20px;
+    box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.57);
+    position:static;
 }
 
-.paises p{
-    margin: 10px;
+.card h3{
+    font-size: 1.35rem;
 }
-
-.populares h2{
-    margin: 40px 35px;
-}
-
-
-.paises h3{
-    margin-bottom: 10px;
-}
-
-/* New York */
-
-.newYork{
-    width: 27%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem; 
-    padding: 10px 20px;
-    border-radius: 15px 15px 15px 15px;
-    border: 3px solid #4a9be6c6;
-    box-shadow: -0px 0px 17px -2px rgba(0, 0, 0, 0.388);
-    background-color: azure;
-}
-
-.newYork h3{
-    text-align: center;
-
-}
-
-.newYork img{
-    width: 100%;
-    height: 325px;
-    border-radius: 10px 10px 10px 10px;
-}
-
-
-/* Londres */
-
-.london{
-    width: 27%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem; 
-    padding: 10px 20px;
-    border-radius: 15px 15px 15px 15px;
-    border: 3px solid #4a9be6c6;
-    box-shadow: -0px 0px 17px -2px rgba(0, 0, 0, 0.388);
-    background-color: azure;
-       
-}
-
-.london h3{
-    text-align: center;
-
-}
-
-.london img{
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-}
-
-
-/* Madrid */
-
-.madrid{
-    width: 27%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem; 
-    padding: 10px 20px;
-    border-radius: 15px 15px 15px 15px;
-    border: 3px solid #4a9be6c6;
-    box-shadow: -0px 0px 17px -2px rgba(0, 0, 0, 0.388);
-    background-color: azure;
-}
-
-.madrid h3{
-    text-align: center;
-
-}
-
-.madrid img{
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    
-}
-
-
 
 /* Footer */
 
 footer{
     background-color: #4a9ae6;
     padding: 10px;
-   
+   margin-top: 20px;
 }
 
 footer p{
