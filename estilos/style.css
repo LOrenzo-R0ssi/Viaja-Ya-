@@ -93,9 +93,7 @@ header{
 }
 
 
-
-
-
+/* CARDS */
 .card{
     margin: 20px;
     box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.57);
@@ -106,40 +104,90 @@ header{
     font-size: 1.35rem;
 }
 
+
 /* Footer */
 
 footer{
     background-color: #4a9ae6;
-    padding: 10px;
-   margin-top: 20px;
+    margin-top: 20px;
 }
 
 footer p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 630;
-    
+    font-weight: 600;
 }
 
-footer img{
-    width: 60px;
-    
+
+
+.grid-container-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "copy   redes   sucursal"
+    ;
 }
 
-/* .copy{
-    display: flex;
-  align-items: self-end;
-  justify-content: self-start;
-} */
 
+.copyright img{
+    width: 250px;
+    padding: 20px;
+}
+
+.copyright p{
+    margin-left: 20px;
+}
+
+.copyright{
+    grid-area: copy;
+}
+
+.redes img{
+    width: 70px;
+    transition: 0.4s;
+}
+
+.redes img:hover{
+    scale:1.15;  
+}
 
 .redes{
-   display: flex;
-   flex-direction: column;
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.direccion img{
+    width: 25px;
+    margin-right: 7px;
+}
+
+.direccion p{
+    margin: 0px;
+}
+
+.direccion{
+    grid-area: sucursal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pin{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
- }
+}
 
+.direccion iframe{
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+}
 
 
 /* DESTINOS */
@@ -153,14 +201,10 @@ footer img{
     align-items: center;
 }
 
-.destinos h2{
-    color: rgb(5, 37, 67);
-    font-size: 2.8rem;
-    margin: 20px;
-}
+
 
 .destinosBanner h1{
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-shadow: -1px -1px 11px rgba(184, 188, 185, 0.535);
     padding: 10px;
     background-color:rgba(245, 245, 245, 0.305);
@@ -171,6 +215,7 @@ footer img{
     font-size: 1.55rem;
     color: #01274a;
     margin-bottom: 15px;
+    font-weight: 650;
 }
 
 .destinos img{
@@ -197,6 +242,7 @@ footer img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
 }
 
 .destino2{
@@ -320,7 +366,7 @@ form{
     
 }
 
-.pregs h3{
+.pregs h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     color: #01274a;
@@ -328,24 +374,28 @@ form{
     margin: 40px 0;
 }
 
-.pregs h2{
+.pregs h1{
     margin: 30px 0px;
     text-align: center;
+    font-size: 3.5rem;
 }
 
-
 .pregs div{
-    background-color: rgba(76, 156, 235, 0.689);
-    padding: 40px;
-    border-radius: 10px;
+   background-color: #4a9be677;
+   padding: 25px;
+   border-radius: 7px;
 }
 
 /* Valores */
+
 .valores h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 625;
     color: #01274a;
 }
+
 
 .valores img{
     width: 25%;
@@ -355,16 +405,11 @@ form{
 
 .valores h4{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #01274a;
     margin-top: 30px;
     margin-bottom: 20px;
-}
-
-.valores h3{
-    margin-top: 15px;
-    text-align: center;
-    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .vectores{
@@ -375,6 +420,7 @@ form{
 }
 
 .vectores div{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,10 +432,26 @@ form{
     border: 3px solid #4a9ae6;
 }
 
+
+
 /* EXPERIENCIAS */
+.exp-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; 
+    color: #01274a;
+    font-weight: 650;
+    text-align: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 
 .experiencias img{
-width: 25px;
+    width: 40px;
+    padding: 4px;
+    border: 3px solid rgba(113, 190, 232, 0.774);
+    border-radius: 20px;
+    margin-right: 11px;
 }
 
 .experiencias i{
@@ -399,19 +461,51 @@ width: 25px;
 }
 
 .persona1{
-    background-color: rgba(209, 209, 209, 0.358);
-    margin:  18px;
+    margin:  30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "cuenta reseña"
+    ". reseña";
 }
+
+.avatar{
+    grid-area: "cuenta";
+    
+}
+
+.opinion{
+    grid-area: "reseña";
+    background-color: rgba(83, 212, 248, 0.235);
+    border-radius: 10px;
+    box-shadow: -1px 0px 27px -10px rgba(0,0,0,0.38);
+    padding: 10px;
+}
+
 
 .persona2{
-    text-align: right;
-    background-color: rgba(209, 209, 209, 0.358);
-    margin:  18px;
+    margin:  30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "cuenta cuenta"
+    ". cuenta";
+    
 }
 
-.persona3{
-    background-color: rgba(209, 209, 209, 0.358);
-    margin:  18px;
+.persona3{  
+    margin:  30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "cuenta reseña"
+    ". reseña";
 }
 
 
@@ -419,10 +513,52 @@ width: 25px;
 /* MEDIA QUERYS */
 
 /* Movil */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 576px){
+
+    /* INDEX */
+
+    /* Footer */
+    .grid-container-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .direccion{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .pin{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* DESTINOS */
     .grid-container-destinos{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
+
+    /* SOBRE NOSOTROS */
+    .valores{
+        margin: 10px;
+    }
+
+    .heroImg{
+        display: none;
+    }
+
+
+    
 }
