@@ -114,6 +114,7 @@ footer{
 
 footer p{
     font-weight: 600;
+    font-size: 1.1rem;
 }
 
 
@@ -187,6 +188,8 @@ footer p{
     width: 300px;
     height: 150px;
     margin: 20px;
+    border-radius: 7px;
+    box-shadow: -0px 0px 17px -6px rgba(0, 0, 0, 0.388);
 }
 
 
@@ -317,27 +320,117 @@ footer p{
 
 /* CONTACTO */
 
+
+
 .contact{
-    margin: 30px 30px;
+    margin: 35px 30px 50px 5px;
+    font-size: 2.8rem;
+    font-weight: 650;
 }
 
-.sucursal h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    color: #01274a;
+.sucursal{
+    background-color: rgba(136, 139, 140, 0.119);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -0px 0px 17px -6px rgba(0, 0, 0, 0.388);
+    margin-bottom: 30px;
+    
+}
 
+.map-desktop{
+    border-radius: 7px;
+}
+
+.map-mobile{
+    display: none;
+}
+
+.sucursal h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #01274a;
+    margin: 20px 5px;
 }
 
 label{
     font-family: 'Montserrat', sans-serif;
+    margin-right: 5px;
 }
+
 
 form{
-    margin-left: 30px;
+    background-color: rgba(136, 139, 140, 0.119);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -0px 0px 17px -6px rgba(0, 0, 0, 0.388);
+    margin-bottom: 40px;
+    
+}
+.nombre-mail{
+    margin-bottom: 40px;
+}
+
+.nombre-mail input{
+    background-color: rgba(255, 255, 255, 0.401);
 }
 
 
 
+.name{
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid #4a9ae6;
+}
+
+.mail{
+    border-radius: 5px;
+    border: 2px solid #4a9ae6; 
+}
+
+textarea{
+    border-radius: 5px;
+    border: 2px solid #4a9ae6;
+    margin-left: 15px;
+    background-color: rgba(255, 255, 255, 0.401);
+}
+
+.mensaje{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.terminos{
+    margin-bottom: 7px;
+}
+
+.notificaciones{
+    margin-bottom: 20px;
+}
+
+.btn{
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.btn input{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.401);
+    border: #4a9ae6 solid 2px;
+    border-radius: 7px;
+    color: #1e6ab2;
+}
+
+.btn input:hover{
+    background-color: #4a9ae6;
+    color: aliceblue;
+}
 /* SOBRE NOSOTROS */
 
 .heroImg img{
@@ -452,6 +545,7 @@ form{
     border: 3px solid rgba(113, 190, 232, 0.774);
     border-radius: 20px;
     margin-right: 11px;
+    margin-left: 11px;
 }
 
 .experiencias i{
@@ -480,10 +574,23 @@ form{
     grid-area: "reseña";
     background-color: rgba(83, 212, 248, 0.235);
     border-radius: 10px;
-    box-shadow: -1px 0px 27px -10px rgba(0,0,0,0.38);
+    box-shadow: -1px 0px 27px -10px rgba(0,0,0,0.472);
     padding: 10px;
 }
 
+.avatar-mirror{
+    grid-area: "cuenta";
+    order: 2;
+}
+
+.opinion-mirror{
+    grid-area: "reseña";
+    background-color: rgba(83, 212, 248, 0.058);
+    border-radius: 10px;
+    box-shadow: -1px 0px 27px -10px rgba(0, 0, 0, 0.472);
+    padding: 10px;
+    order: 1;
+}
 
 .persona2{
     margin:  30px;
@@ -560,5 +667,27 @@ form{
     }
 
 
+    /* CONTACTO */
+
+    /* Sucursal */
+    .map-desktop{
+        display: none;
+    }
+
+    .map-mobile{
+        display: block;
+        border-radius: 7px;
+    }
+
+    /* Formulario */
+    .name{
+        margin-bottom: 30px;
+    }
+
+    .terminos{
+        margin-bottom: 20px;
+    }
+
+    
     
 }
