@@ -1,0 +1,84 @@
+
+/* EXPERIENCIAS */
+
+.container{
+    .exp-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem; 
+        color: #01274a;
+        font-weight: 650;
+        text-align: center; 
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .experiencias{
+        img{
+            width: 40px;
+            padding: 4px;
+            border: 3px solid rgba(113, 190, 232, 0.774);
+            border-radius: 20px;
+            margin-right: 11px;
+            margin-left: 11px;
+        }
+        
+         i{
+            font-family: 'Montserrat', sans-serif;
+            color: gray;
+            font-size: 0.8rem;
+        }
+
+        .persona1{
+            margin:  30px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            "cuenta reseña"
+            ". reseña";
+
+            .avatar{
+                grid-area: "cuenta";
+                
+            }
+            
+            .opinion{
+                grid-area: "reseña";
+                background-color: rgba(83, 212, 248, 0.235);
+                border-radius: 10px;
+                box-shadow: -1px 0px 27px -10px rgba(0,0,0,0.472);
+                padding: 10px;
+            }
+        }
+
+        .persona2{
+            margin:  30px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+            "cuenta cuenta"
+            ". cuenta";
+
+            .avatar-mirror{
+                grid-area: "cuenta";
+                order: 2;
+            }
+            
+            .opinion-mirror{
+                grid-area: "reseña";
+                background-color: rgba(83, 212, 248, 0.058);
+                border-radius: 10px;
+                box-shadow: -1px 0px 27px -10px rgba(0, 0, 0, 0.472);
+                padding: 10px;
+                order: 1;
+            }
+        }
+
+        .persona3{
+            @extend .persona1;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+/* MEDIA QUERYS */
+
+/* Movil */
+@media screen and (max-width: 576px){
+
+    /* INDEX */
+
+    /* Footer */
+
+    footer{
+        .grid-container-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .direccion{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            .pin{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    
+            .redes{
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            
+        }
+    }
+    
+
+
+    /* DESTINOS */
+    .destinos{
+      .grid-container-destinos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }  
+    }
+
+    .destinosBanner{
+       h1{
+        font-size: 2.9rem;
+    } 
+    }
+    
+
+
+    /* SOBRE NOSOTROS */
+    .valores{
+        margin: 10px;
+    }
+
+    .heroImg{
+        display: none;
+    }
+    
+    /* CONTACTO */
+
+    /* Sucursal */
+    .container{
+       .sucursal{
+
+        .map-desktop{
+            display: none;
+            }
+
+        .map-mobile{
+            display: block;
+            border-radius: 7px;
+            }
+            
+        } 
+    }
+    
+
+    /* Formulario */
+    
+
+   
+
+    form{
+        margin: 50px 15px;
+        
+        .nombre-email{
+            .name{
+                margin-bottom: 30px;
+            }
+        }
+
+        .checkbox{
+            .terminos{
+                margin-bottom: 20px;
+            }
+        }
+        
+
+        .sucursal{
+                margin: 0px 15px 70px 15px;
+            }
+    }
+    
+   
+    
+}

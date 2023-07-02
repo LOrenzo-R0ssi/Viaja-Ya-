@@ -1,0 +1,511 @@
+@charset "UTF-8";
+/* Selector Universal */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Text */
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.5rem;
+  color: #01274a;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #01274a;
+  font-weight: 650;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* Header */
+header {
+  background-color: #4a9ae6;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 5px 27px -11px rgba(0, 0, 0, 0.62);
+  /* Logo de la empresa */
+  /* Icono toggler */
+}
+header .navbar-brand img {
+  width: 100px;
+  margin-left: 20px;
+  transition: 0.6s;
+}
+header .navbar-brand img:hover {
+  scale: 1.15;
+}
+header .navbar-toggler {
+  border: none;
+}
+header .navbar-toggler:hover {
+  box-shadow: none;
+}
+header .collapse {
+  margin-right: 20px;
+}
+header .collapse .nav-item {
+  font-size: 1.15rem;
+  font-weight: 635;
+}
+header .collapse .nav-item .nav-link:hover {
+  color: rgb(222, 239, 248);
+}
+
+/* Banner */
+.banner {
+  background-image: url(../media/bannerIndex.jpg);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner p {
+  font-size: 1.5rem;
+}
+
+/* CARDS */
+.card {
+  margin: 20px;
+  box-shadow: 0px 0px 17px -4px rgba(0, 0, 0, 0.57);
+  position: static;
+}
+.card h3 {
+  font-size: 1.35rem;
+}
+
+/* Footer */
+footer {
+  background-color: #4a9ae6;
+  margin-top: 20px;
+}
+footer p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+footer .grid-container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "copy   redes   sucursal";
+}
+footer .copyright {
+  grid-area: copy;
+}
+footer .copyright img {
+  width: 250px;
+  padding: 20px;
+}
+footer .copyright p {
+  margin-left: 20px;
+}
+footer .redes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .redes img {
+  width: 70px;
+  transition: 0.4s;
+}
+footer .redes img:hover {
+  scale: 1.15;
+}
+footer .direccion {
+  grid-area: sucursal;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .direccion img {
+  width: 25px;
+  margin-right: 7px;
+}
+footer .direccion p {
+  margin: 0px;
+}
+footer .direccion iframe {
+  width: 300px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.388);
+}
+footer .direccion .pin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DESTINOS */
+.destinosBanner {
+  background-image: url(../media/bannerDestinos.png);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.destinosBanner h1 {
+  font-size: 4rem;
+  text-shadow: -1px -1px 11px rgba(184, 188, 185, 0.535);
+  padding: 10px;
+  background-color: rgba(245, 245, 245, 0.305);
+  font-weight: 650;
+}
+
+.destinos h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.55rem;
+  color: #01274a;
+  margin-bottom: 15px;
+  font-weight: 650;
+}
+.destinos img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.388);
+}
+.destinos .grid-container-destinos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 30px;
+  row-gap: 45px;
+  margin: 40px 45px 65px 45px;
+  /* Destinos flexbox */
+}
+.destinos .grid-container-destinos .destino1, .destinos .grid-container-destinos .destino6, .destinos .grid-container-destinos .destino5, .destinos .grid-container-destinos .destino4, .destinos .grid-container-destinos .destino3, .destinos .grid-container-destinos .destino2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.destinos .grid-container-destinos .destino1 img, .destinos .grid-container-destinos .destino6 img, .destinos .grid-container-destinos .destino5 img, .destinos .grid-container-destinos .destino4 img, .destinos .grid-container-destinos .destino3 img, .destinos .grid-container-destinos .destino2 img {
+  width: 100%;
+  height: 100%;
+}
+.destinos .grid-container-destinos .destino2 img {
+  width: 100%;
+  height: 100%;
+}
+.destinos .grid-container-destinos .destino3 img {
+  width: 100%;
+  height: 100%;
+}
+.destinos .grid-container-destinos .destino4 img {
+  width: 100%;
+  height: 100%;
+}
+.destinos .grid-container-destinos .destino5 img {
+  width: 100%;
+  height: 100%;
+}
+.destinos .grid-container-destinos .destino6 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* CONTACTO */
+.container .contact {
+  margin: 35px 30px 50px 5px;
+  font-size: 2.8rem;
+  font-weight: 650;
+}
+.container .sucursal {
+  background-color: rgba(136, 139, 140, 0.119);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.388);
+  margin-bottom: 30px;
+}
+.container .sucursal .map-desktop {
+  border-radius: 7px;
+}
+.container .sucursal .map-mobile {
+  display: none;
+}
+.container .sucursal h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #01274a;
+  margin: 20px 5px;
+}
+.container .formulario label {
+  font-family: "Montserrat", sans-serif;
+  margin-right: 5px;
+}
+.container .formulario form {
+  background-color: rgba(136, 139, 140, 0.119);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.388);
+  margin-bottom: 40px;
+}
+.container .formulario .nombre-mail {
+  margin-bottom: 40px;
+}
+.container .formulario .nombre-mail input {
+  background-color: rgba(255, 255, 255, 0.401);
+}
+.container .formulario .nombre-mail .name {
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 2px solid #4a9ae6;
+}
+.container .formulario .nombre-mail .mail {
+  border-radius: 5px;
+  border: 2px solid #4a9ae6;
+}
+.container .formulario .mensaje {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.container .formulario .mensaje textarea {
+  border-radius: 5px;
+  border: 2px solid #4a9ae6;
+  margin-left: 15px;
+  background-color: rgba(255, 255, 255, 0.401);
+}
+.container .formulario .checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .formulario .terminos {
+  margin-bottom: 7px;
+}
+.container .formulario .notificaciones {
+  margin-bottom: 20px;
+}
+.container .formulario .btn {
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.container .formulario .btn input {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.401);
+  border: #4a9ae6 solid 2px;
+  border-radius: 7px;
+  color: #1e6ab2;
+}
+.container .formulario .btn input:hover {
+  background-color: #4a9ae6;
+  color: aliceblue;
+}
+
+/* SOBRE NOSOTROS */
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero .heroImg img {
+  width: 600px;
+  margin: 7px;
+  border-radius: 7px;
+}
+.hero .pregs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 60px;
+}
+.hero .pregs h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #01274a;
+  text-align: left;
+  margin: 40px 0;
+}
+.hero .pregs h1 {
+  margin: 30px 0px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+.hero .pregs div {
+  background-color: rgba(74, 155, 230, 0.4666666667);
+  padding: 25px;
+  border-radius: 7px;
+}
+
+.valores h3 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 625;
+  color: #01274a;
+}
+.valores img {
+  width: 25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.valores h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #01274a;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.valores .vectores {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.valores .vectores div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow: 0px 0px 27px -8px rgba(0, 0, 0, 0.55);
+  border-radius: 13px 13px 13px 13px;
+  border: 3px solid #4a9ae6;
+}
+
+/* EXPERIENCIAS */
+.container .exp-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #01274a;
+  font-weight: 650;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container .experiencias img {
+  width: 40px;
+  padding: 4px;
+  border: 3px solid rgba(113, 190, 232, 0.774);
+  border-radius: 20px;
+  margin-right: 11px;
+  margin-left: 11px;
+}
+.container .experiencias i {
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  font-size: 0.8rem;
+}
+.container .experiencias .persona1, .container .experiencias .persona3 {
+  margin: 30px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "cuenta reseña" ". reseña";
+}
+.container .experiencias .persona1 .avatar, .container .experiencias .persona3 .avatar {
+  grid-area: "cuenta";
+}
+.container .experiencias .persona1 .opinion, .container .experiencias .persona3 .opinion {
+  grid-area: "reseña";
+  background-color: rgba(83, 212, 248, 0.235);
+  border-radius: 10px;
+  box-shadow: -1px 0px 27px -10px rgba(0, 0, 0, 0.472);
+  padding: 10px;
+}
+.container .experiencias .persona2 {
+  margin: 30px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "cuenta cuenta" ". cuenta";
+}
+.container .experiencias .persona2 .avatar-mirror {
+  grid-area: "cuenta";
+  order: 2;
+}
+.container .experiencias .persona2 .opinion-mirror {
+  grid-area: "reseña";
+  background-color: rgba(83, 212, 248, 0.058);
+  border-radius: 10px;
+  box-shadow: -1px 0px 27px -10px rgba(0, 0, 0, 0.472);
+  padding: 10px;
+  order: 1;
+}
+/* MEDIA QUERYS */
+/* Movil */
+@media screen and (max-width: 576px) {
+  /* INDEX */
+  /* Footer */
+  footer .grid-container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .grid-container-footer .direccion {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .grid-container-footer .direccion .pin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .grid-container-footer .redes {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  /* DESTINOS */
+  .destinos .grid-container-destinos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .destinosBanner h1 {
+    font-size: 2.9rem;
+  }
+  /* SOBRE NOSOTROS */
+  .valores {
+    margin: 10px;
+  }
+  .heroImg {
+    display: none;
+  }
+  /* CONTACTO */
+  /* Sucursal */
+  .sucursal .map-desktop {
+    display: none;
+  }
+  .sucursal .map-mobile iframe {
+    display: block;
+    border-radius: 7px;
+  }
+  /* Formulario */
+  form {
+    margin: 50px 15px;
+  }
+  form .nombre-email .name {
+    margin-bottom: 30px;
+  }
+  form .checkbox .terminos {
+    margin-bottom: 20px;
+  }
+  form .sucursal {
+    margin: 0px 15px 70px 15px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
