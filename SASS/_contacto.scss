@@ -20,14 +20,10 @@
             border-radius: 7px;
         }
         
-        .map-mobile{
-            display: none;
-        }
-        
         h2{
             font-family: 'Montserrat', sans-serif;
             font-size: 2rem;
-            color: #01274a;
+            color: $azul;
             margin: 20px 5px;
         }
         
@@ -48,23 +44,36 @@
             margin-bottom: 40px;
             
         }
+        input{
+            transition: 0.7s;
+            &:focus{
+                    transform: scale(1.06);
+             }
+        }
+        
 
         .nombre-mail{
             margin-bottom: 40px;
         
             input{
                 background-color: rgba(255, 255, 255, 0.401);
+                &:focus{
+                    border: none;
+                    border-bottom: $b-celeste;
+                    outline: 0px;
+                    border-radius: 0px;
+                }
             }
             
             .name{
                 margin-right: 20px;
                 border-radius: 5px;
-                border: 2px solid #4a9ae6;
+                border: $b-gris;
             }
 
             .mail{
                 border-radius: 5px;
-                border: 2px solid #4a9ae6; 
+                border: $b-gris; 
             }
         }
 
@@ -75,9 +84,18 @@
         
             textarea{
                 border-radius: 5px;
-                border: 2px solid #4a9ae6;
+                border: $b-gris;
                 margin-left: 15px;
                 background-color: rgba(255, 255, 255, 0.401);
+                transition: 0.7s;
+                    &:focus{
+                            transform: scale(1.06);
+                            border: none;
+                            border-bottom: $b-celeste;
+                            outline: 0px;
+                            border-radius: 0px;
+                     }
+                
             }
         }
 
@@ -99,19 +117,24 @@
         .btn{
             padding: 0px;
             margin-bottom: 30px;
+            transition: 2s;
         
             input{
-                padding: 5px;
+                padding: 3.5px;
                 background-color: rgba(255, 255, 255, 0.401);
-                border: #4a9ae6 solid 2px;
+                border: $celeste solid 2px;
                 border-radius: 7px;
                 color: #1e6ab2;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: $celeste;
+                    color: aliceblue;
+                    transform: scale(1.1);
+                }
             }
             
-            input:hover{
-                background-color: #4a9ae6;
-                color: aliceblue;
-            }
+           
         }
     }
 

@@ -4,6 +4,12 @@
     padding: 0px;
 }
 
+/*Colores*/
+$azul:#01274a;
+$celeste: #4a9ae6;
+$b-gris: 2px solid rgb(167, 167, 167);
+$b-celeste: 2px solid $celeste;
+
 
 /* Text */
 
@@ -14,14 +20,14 @@ p{
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 5.5rem;
-    color: #01274a;
+    color: $azul;
     font-weight: 600;
 }
 
 h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem; 
-    color: #01274a;
+    color: $azul;
     font-weight: 650;
     margin-top: 20px;
     margin-left: 20px;
