@@ -33,6 +33,7 @@ header {
   position: sticky;
   top: 0px;
   box-shadow: 0px 5px 27px -11px rgba(0, 0, 0, 0.62);
+  z-index: 10;
   /* Logo de la empresa */
   /* Icono toggler */
 }
@@ -471,6 +472,69 @@ footer .direccion .pin {
 /* MEDIA QUERYS */
 /* Movil */
 @media screen and (max-width: 576px) {
+  /* INDEX */
+  /* Footer */
+  footer .grid-container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .grid-container-footer .direccion {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .grid-container-footer .direccion .pin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .grid-container-footer .redes {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  /* DESTINOS */
+  .destinos .grid-container-destinos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .destinosBanner h1 {
+    font-size: 2.9rem;
+  }
+  /* SOBRE NOSOTROS */
+  .valores {
+    margin: 10px;
+  }
+  .heroImg {
+    display: none;
+  }
+  /* CONTACTO */
+  /* Sucursal */
+  .container .formulario .nombre-mail .name {
+    margin-bottom: 12px;
+  }
+  .container .sucursal .map-desktop {
+    width: 300px;
+    height: 300px;
+  }
+  /* Formulario */
+  form {
+    margin: 50px 15px;
+  }
+  form .nombre-email .name {
+    margin-bottom: 30px;
+  }
+  form .checkbox .terminos {
+    margin-bottom: 20px;
+  }
+  form .sucursal {
+    margin: 0px 15px 70px 15px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 1023px) {
   /* INDEX */
   /* Footer */
   footer .grid-container-footer {
